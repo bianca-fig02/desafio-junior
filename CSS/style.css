@@ -1,0 +1,119 @@
+:root {
+  --cor-fundo: #fdf7f7;
+  --cor-principal: #d699a6;
+  --cor-vinho: #c47a86;
+  --cor-vinho-fundo: #f5e0e3;
+  --cor-texto: #3f2b37;
+  --cor-branca: #fffdfc;
+  --cor-borda: #d8b2ba;
+  --cor-sombra: rgba(124, 65, 74, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: var(--cor-branca);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px var(--cor-sombra);
+  border: 1px solid var(--cor-borda);
+}
+
+h1 {
+  text-align: center;
+  color: var(--cor-texto);
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 2px solid var(--cor-principal);
+  border-radius: 8px;
+  background-color: #fff0f3;
+  color: var(--cor-texto);
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+#searchInput:focus {
+  border-color: #b9707d;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--cor-principal);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b9707d;
+}
+
+/* Lista de jogos */
+#results {
+  margin-top: 30px;
+}
+
+.game {
+  border: 1px solid var(--cor-vinho);
+  background-color: var(--cor-vinho-fundo);
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--cor-texto);
+}
+
+.game:hover {
+  background-color: #ebc8cc;
+  box-shadow: 0 2px 10px var(--cor-sombra);
+}
+
+/* Detalhes do jogo */
+.game-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fffaf0;
+  border-radius: 12px;
+  border: 1px solid var(--cor-vinho);
+}
+
+.game-details h3 {
+  margin-top: 0;
+  color: var(--cor-texto);
+}
+
+a {
+  color: var(--cor-vinho);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
